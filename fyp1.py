@@ -33,8 +33,7 @@ for i, n in zip(OB, N):
         executable="/bin/bash",
     )
     for j in obsid_list:
-        # Step 1: Find the Chandra obsid with the
-        # maximum exposure time
+        # Step 1: Find the Chandra obsid with the maximum exposure time
         command_find_obsid = f"""
         source ~/ciao-4.16/bin/ciao.sh
         find_chandra_obsid {j}
